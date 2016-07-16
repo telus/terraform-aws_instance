@@ -20,7 +20,7 @@ Defaults:
 
 Required:
 - `instance_ami` - The AMI to use when launching the instance.
-- `subnet_id - The VPC subnet to place the instance in.
+- `subnet_id` - The VPC subnet to place the instance in.
 - `security_group_ids` - The security_group ids to attach the instance to. Comma delimited list.
 - `role` - The instance name you want, this is used to populate a portion of the Name tag and wholly the Role tag, in line with our conventions.
 - `user_data` - The path to the user_data file. Terraform will include the contents of this file while launching the instance.
@@ -31,7 +31,7 @@ Module Outputs
 
 - `instance_public_ip` - The public IP of the created instance (if it has one.)
 - `instance_id` - The instance id of the created instance.
-- `instance_private_ip - The private IP of the created instance.
+- `instance_private_ip` - The private IP of the created instance.
 
 Usage
 -----
