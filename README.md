@@ -60,4 +60,4 @@ module "instance" {
 Authors
 =======
 
-Created and maintained by [Phil Dufault] (phil.dufault@telus.com)
+Created and maintained by [Phil Dufault](https://github.com/pdufault) (phil.dufault@telus.com)
