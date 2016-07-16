@@ -26,6 +26,7 @@ variable "instance_root_volume_type" {
 
 variable "instance_root_volume_provisioned_io" {
   description = "This is the provisioned IO the root volume the instance is launched with. Optional."
+  default = 0
 }
 
 variable "instance_root_volume_delete_on_termination" {
