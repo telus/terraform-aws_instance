@@ -10,7 +10,6 @@ resource "aws_instance" "default" {
 
   # Set the size, type, speed, and the deletion policy on the instance's root block device
   root_block_device = {
-    device_name = "/dev/sda"
     volume_type = "${var.instance_root_volume_type}"
     volume_size = "${var.instance_root_volume_size}"
     iops = "${var.instance_root_volume_provisioned_io}"
