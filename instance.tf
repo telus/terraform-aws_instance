@@ -1,6 +1,6 @@
 resource "aws_instance" "default" {
   tags {
-    Name = "${var.role}-${var.project}"
+    Name = "${var.role}-${var.project}-${var.environment}"
     Environment = "${var.environment}"
     Project = "${var.project}"
     Role = "${var.role}"
