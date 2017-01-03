@@ -19,7 +19,6 @@ Defaults:
 - `instance_iam_instance_profile` - The IAM instance profile the instance is created with.  Default is autonomous
 
 Required:
-- `instance_ami` - The AMI to use when launching the instance.
 - `subnet_id` - The VPC subnet to place the instance in.
 - `security_group_ids` - The security_group ids to attach the instance to. Comma delimited list.
 - `role` - The instance name you want, this is used to populate a portion of the Name tag and wholly the Role tag, in line with our conventions.
@@ -49,7 +48,6 @@ module "instance" {
   environment = "production"
   subnet_id = "${module.vpc.public_subnets}"
   security_group_ids = "${module.security_group_web.security_group_id},${module.security_group_ssh.security_group_id}"
-  instance_ami = "${lookup(var.aws_amis, var.aws_region)}"
   user_data = "${file("resources/user_data.sh")}"
   instance_type = "m3.medium"
 }

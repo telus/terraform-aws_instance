@@ -44,10 +44,6 @@ variable "role" {
   description = "This is a string to describe the role, or the task that this instance preforms"
 }
 
-variable "instance_ami" {
-  description = "This is the AMI id used to launch the instance instance with"
-}
-
 variable "project" {
   description = "This variable controls the prefix of your instance's name"
 }
