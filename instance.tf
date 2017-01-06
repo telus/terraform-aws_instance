@@ -42,4 +42,7 @@ resource "aws_instance" "default" {
 
   # Feed the instance a cloud-init config or shell script, so post-instance configuration can run.
   user_data = "${var.user_data}"
+
+  # Specify if instance should have a public ip address
+  associate_public_ip_address = "${var.associate_public_ip_address}"
 }
