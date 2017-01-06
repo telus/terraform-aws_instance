@@ -63,3 +63,8 @@ variable "security_group_ids" {
 variable "user_data" {
   description = "This is the user-data that the instance is launched with"
 }
+
+variable "associate_public_ip_address" {
+  description = "Specifys if instance should have a public ip address"
+  default = "false"
+}
