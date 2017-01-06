@@ -9,3 +9,7 @@ output "instance_id" {
 output "instance_private_ip" {
   value = "${aws_instance.default.private_ip}"
 }
+
+output "instance_public_dns" {
+  value = "${aws_instance.default.public_dns}"
+}
