@@ -15,6 +15,7 @@ resource "aws_instance" "default" {
     Role = "${var.role}"
     ForgeBucket = "telusdigital-forge"
     ForgeRegion = "eu-central-1"
+    AmazonInspectorScan = "yes"
   }
 
   # Set the size, type, speed, and the deletion policy on the instance's root block device
