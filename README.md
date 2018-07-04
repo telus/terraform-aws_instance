@@ -17,6 +17,7 @@ Defaults:
 - `instance_root_volume_delete_on_termination` - Controls when the instance is terminated, if the EBS volume terminates itself as well. Defaults to true
 - `environment` - The environment type this instance is tagged with.  Valid values are: production, staging, uet, or development. Defaults to development
 - `instance_iam_instance_profile` - The IAM instance profile the instance is created with.  Default is autonomous
+- `ami` - The AMI to use with your instance. Defaults to the latest TELUS AMI
 
 Required:
 - `subnet_id` - The VPC subnet to place the instance in.

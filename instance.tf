@@ -30,7 +30,7 @@ resource "aws_instance" "default" {
   instance_type = "${var.instance_type}"
 
   # Launch the instance with the specified AMI
-  ami = "${data.aws_ami.default.id}"
+  ami = "${var.ami}"
 
   # Launch the instance with the IAM instance profile, so it has access to it's needed AWS resources
   iam_instance_profile = "${var.instance_iam_instance_profile}"

@@ -9,6 +9,11 @@ variable "instance_type" {
   default = "m3.medium"
 }
 
+variable "ami" {
+  description = "The AMI you want to use with your instance"
+  default = "${data.aws_ami.default.id}"
+}
+
 variable "instance_iam_instance_profile" {
   description = "This is the IAM instance profile the instance is launched with.  Default is autonomous so forge can run."
   default = "autonomous"
